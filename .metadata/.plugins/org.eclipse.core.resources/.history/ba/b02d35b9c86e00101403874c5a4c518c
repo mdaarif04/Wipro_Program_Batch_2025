@@ -1,0 +1,95 @@
+package com.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Main {
+ 
+ private static List<Employe> list= new ArrayList<>();
+ private static Scanner sc  = new Scanner(System.in);
+ 
+ 
+ public static void main(String[] args) {
+  while(true)
+  {
+   System.out.println("1.Add , 2.Delete , 3. Search , 4. View All, 5 Postion");
+   int choice = sc.nextInt();
+   switch(choice)
+   {
+   case 1  -> addEmployee();
+   case 2 -> deleteEmployee();
+   case 3-> searchEmployee();
+   case 4 -> viewAll();
+   case 5 -> addEmpAtPostion();
+   
+   }
+  }
+ }
+ 
+ static void addEmployee() {
+  
+  System.out.println("Enter id  , Name , salary");
+  int id=sc.nextInt();
+  String name= sc.next();
+  double salary = sc.nextDouble();
+  list.add(new Employe(id,name,salary));
+  
+  
+ }
+ static void viewAll() {
+  System.out.println("Employee Data\n");
+  for(Employe e: list) {
+   System.out.println(e);
+  }
+ }
+ 
+ 
+ static void deleteEmployee() {
+	 System.out.println("Enter the ID to delete: ");
+	 int id1 = sc.nextInt();
+	 boolean found = false;
+	 for(Employe e: list) {
+    	 if(id1 == e.getId()) {
+    		 list.remove(e);
+    		 System.out.println("Removed Successfully");
+    		 found = true;
+    		 break;
+    	 }
+     }
+	 if(!found) {
+		 System.out.println("Employee ID not found"); 
+	 }
+ }
+
+
+static void searchEmployee() {
+	int id = sc.nextInt();
+	boolean found = false;
+	for(Employe em: list) {
+		if(em.getId() == id) {
+			System.out.println(em);
+			found = true;
+			break;
+		}
+	}
+	if(!found) {
+		System.out.println("Not found");
+	}
+}
+
+static void addEmpAtPostion() {
+	System.out.println("Enter the postion name where you store new employee details \n");
+	int postion = sc.nextInt();
+	int id = sc.nextInt();
+	String name = sc.next();
+	double salary = sc.nextDouble();
+	if(postion>=0 && postion<=list.size())
+		 list.add(postion , new Employe(id,name,salary));
+		 else
+			 System.out.println("Invalid Position");
+	
+}
+	
+}

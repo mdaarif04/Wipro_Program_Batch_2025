@@ -1,0 +1,16 @@
+package com.wipro;
+
+public class PrimitiveNonPrimitive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Primitive");
+//		byte a= 10;
+//		short s = a;
+//	    System.out.println(s);
+		short s = 10;
+		byte b = (byte)s;
+		System.out.println(b);
+	}
+
+}

@@ -1,0 +1,42 @@
+package com.example;
+
+
+
+class Person
+{
+	
+int id;
+String name;
+
+public ThisKeywordExample(int id, String name) {
+	
+	this.id = id;
+	this.name = name;
+}
+
+public ThisKeywordExample()
+{
+	
+	this(101 , "Niti");   // constructor chaining
+
+}
+
+public void display()
+{
+	
+	System.out.println("ID :" + this.id + "Name :" + this.name );
+}
+
+}
+
+public class ThisKeywordExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Person p = new Person();
+		p.display();
+
+	}
+
+}

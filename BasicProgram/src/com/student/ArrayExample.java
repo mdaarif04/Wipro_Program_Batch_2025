@@ -1,0 +1,67 @@
+package com.student;
+
+import java.util.Scanner;
+
+public class ArrayExample {
+	int id;
+	String name;
+	int[] marks;
+
+	// Constructor
+	public ArrayExample(int id, String name, int[] marks) {
+		this.id = id;
+		this.name = name;
+		this.marks = marks;
+	}
+
+	public void displayInfo() {
+		System.out.println("Student Id: " + id);
+		System.out.println("Student Name: " + name);
+		System.out.println("Student Marks: ");
+		for (int mark : marks) {
+			System.out.print(mark + " ");
+		}
+		System.out.println("\n..");
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("How many students do you want to add in a batch?");
+		int batchSize = sc.nextInt();
+
+		// Jagged array of students
+		ArrayExample[] students = new ArrayExample[batchSize];
+
+		for (int i = 0; i < batchSize; i++) {
+			System.out.println("\nEnter details for student " + (i + 1));
+
+			System.out.print("Enter student Id: ");
+			int id = sc.nextInt();
+
+			System.out.print("Enter student name: ");
+			String name = sc.next();
+
+			System.out.print("Enter number of subjects: ");
+			int numSubjects = sc.nextInt();
+
+			int[] marks = new int[numSubjects];
+
+			System.out.println("Enter marks for " + numSubjects + " subjects:");
+			for (int j = 0; j < numSubjects; j++) {
+				System.out.print("Subject " + (j + 1) + ": ");
+				marks[j] = sc.nextInt();
+			}
+
+			// Create student object with individual subject marks
+			students[i] = new ArrayExample(id, name, marks);
+		}
+
+		System.out.println("--- Student Details ---");
+		for (ArrayExample student : students) {
+			student.displayInfo();
+		}
+
+		sc.close();
+	}
+}

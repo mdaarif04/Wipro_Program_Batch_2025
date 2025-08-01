@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Day3_Program/src/Redmi.txt&apos; to &apos;Readmi.txt&apos;" description="Rename resource &apos;Redmi.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Redmi.txt" name="Readmi.txt" stamp="1754018290744" updateReferences="true"/>
+</session>

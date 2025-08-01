@@ -1,0 +1,32 @@
+package com.student;
+
+public class students {
+
+	int id;
+	String name;
+	int marks[];
+	students (int id, String name, int[] marks){
+		this.id = id;
+		this.name = name;
+		this.marks = marks;
+	}
+	
+	void display() {
+		System.out.println("id "+id);
+		System.out.println("name "+name);
+		System.out.println("Marks ");
+		for(int mark: marks) {
+			System.out.print("mark "+mark);
+		}System.out.println();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] marksArr = {85,90,78};
+		students s1 = new students(1,"Aarif",marksArr);
+		
+		s1.display();
+
+	}
+	
+
+}

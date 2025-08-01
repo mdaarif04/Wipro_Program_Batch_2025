@@ -1,0 +1,5 @@
+package com.wipro.abstraction;
+
+public interface Discountable {
+
+}

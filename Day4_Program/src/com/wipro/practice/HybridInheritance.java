@@ -1,0 +1,21 @@
+package com.wipro.practice;
+
+class Products implements IDiscount{
+	int id;
+	double price;
+	String name;
+	@Override
+	public double calculDis() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+
+public class HybridInheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

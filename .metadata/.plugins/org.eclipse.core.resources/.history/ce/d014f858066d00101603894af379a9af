@@ -1,0 +1,29 @@
+package com.example;
+
+
+
+class ThisKeywordExample
+{
+	
+int id;
+String name;
+
+public ThisKeywordExample(int id, String name) {
+	
+	this.id = id;
+	this.name = name;
+}
+
+public ThisKeywordExample()
+{
+	
+	this(101 , "Niti");   // constructor chaining
+
+}
+
+public void display()
+{
+	
+	System.out.println("ID :" + this.id + "Name :" + this.name );
+}
+
