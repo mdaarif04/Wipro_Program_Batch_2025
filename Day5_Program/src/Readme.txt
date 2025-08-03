@@ -56,3 +56,37 @@ Implementation classes  ---  ArrayList ,  LinkedList , HashSet,TreeSet
 b)  one for storing key/value pairs form of elements and keys  which we called a map
 Interface --- Map
 Implementation classes ---  HashMap , TreeMap
+
+
+
+Generic class or interface
+
+List : we can store duplicate numbers  , sequence stored index wise , ordered
+If you are insert/ deleting the employees frequently in middle then use LinkedList
+
+Set : For enforcing uniqueness which will not allow to store duplicate numbers  , unordered
+and if you are appending and searching / view / sorting  frequently then use ArrayList
+
+Queue :- (FIFO) is a linear data structure that supports insertion at the end and removal from the front 
+It gives different types of implementation class  :
+a) LinkedList   :-  General queue  ( FIFO based) we also Dequeue
+b) ArrayDeque  :-    It is faster than the LinkedList 
+c) PriorityQueue :-    priority based ( It automatically orders elements by natural ordering or comparator
+
+
+Two types of Ordering techniques :
+a) Natural Order 
+b) Custom Order 
+
+c)In  Natural Order ---->   Comparable<T> Interface   --- compareTo() to override
+d)In  Custom Order  --->   Comparator<T> Interface   --- compare() to override
+
+a) Natural ordering  --  means default sorting logic is defined inside the class itself using Comparable<T> (i.e. lowest to Highest (ascending)) 
+ Comparable  is an  interface which does natural ordering   and provide a compareTo() method to compare and with this we can do only one ordering  
+
+
+b) Custom Ordering -- means ordering can be customized as per the requirement like highest to lowest or ordering on the basis of their name or any other parameter 
+
+For Custom ordering we have to define the external class  to sort by other fields (like rating or name)... May have multiple different sorting strategies 
+
+and implements the Comparator Interface which provide compare method
