@@ -1,3 +1,4 @@
+
 ByteStreams : InputStream / Output Streams
 
 Used to read/write raw binary data(bytes)  : Useful for binary files , images 
@@ -19,8 +20,4 @@ Base Classes : - 			FileReader , FileWriter ((Basic file text I/O))
 Piped Streams : PipedReader , PipedWriter( In threads we use it for thread to thread communication using streams)
 
 File Handling  : with File Class which gives methods as exists() , isDirectory() , getName() etc....
-
-
-
-
-
+						
