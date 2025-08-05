@@ -1,4 +1,4 @@
-package com.example.behaviraldesignpattern;
+package com.example.creationaldesignpattern;
 
 //meant for creating different types of payment methods(credit , upi)based on user's input
 

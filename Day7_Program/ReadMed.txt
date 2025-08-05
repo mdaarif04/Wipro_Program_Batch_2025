@@ -89,4 +89,18 @@ Design Patterns: Behavioral - Factory, Abstract Factory, Builder, Prototype, Sin
 
 Design Patterns: Structural - Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
 
-Design Patterns: Creational - Interpreter, Template method, Chain responsibility, Comment Iterator, Mediator, Momento, Observer, State, Strategy, Visitor.
+adapter -- legacy systems  --- integrations  --- Data converter  / Currency Converter
+Facade --- Simplifying large complex subsystem to small or a single point call by the client --- Deployment of application on cloud
+Decorator ---- Adding some dynamic behaviour  --- Giving styles to a text at runtime, Bootstrap classes in html
+Proxy --- Lazy loading , access control , reducing memory usage 
+
+
+
+Design Patterns: Behvioural ( We focus on to manage responsibilities and workflows)- 
+Interpreter, Template method, Chain responsibility, Comment Iterator, Mediator, Momento, Observer, State, Strategy, Visitor.
+
+Commonly used design patterns in real use cases are below: 
+Chain responsibility
+State
+Observer
+Strategy
