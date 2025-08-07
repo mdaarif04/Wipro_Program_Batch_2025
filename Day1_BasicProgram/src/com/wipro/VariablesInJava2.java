@@ -4,7 +4,7 @@ package com.wipro;
 //local variable , instance variable,static variable (Method Area), final variables(Varies)
 
 // variables are named one and act as a container for storing data , They must be declared with a type
- class VariablesStructure {
+ class VariablesStructuree {
 	
 	// Non-static or Instance variables -- these are stored in heap
 	int id =101;
@@ -94,7 +94,7 @@ package com.wipro;
 		
 		 
 		 
-		 VariablesStructure vs = new VariablesStructure();
+		 VariablesStructuree vs = new VariablesStructuree();
 		 System.out.println("Variables Structure Class Object 1");
 		 System.out.println(vs.count); 
 		 
